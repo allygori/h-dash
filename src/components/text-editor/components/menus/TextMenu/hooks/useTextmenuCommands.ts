@@ -1,4 +1,4 @@
-import { Language } from "@/components/text-editor/vendors/@tiptap-pro/extension-ai";
+// import { Language } from "@/components/text-editor/vendors/@tiptap-pro/extension-ai";
 import { Editor } from "@tiptap/react";
 import { useCallback } from "react";
 
@@ -71,42 +71,51 @@ export const useTextmenuCommands = (editor: Editor) => {
     [editor],
   );
 
-  const onSimplify = useCallback(
-    () => editor.chain().focus().aiSimplify().run(),
-    [editor],
-  );
-  const onEmojify = useCallback(
-    () => editor.chain().focus().aiEmojify().run(),
-    [editor],
-  );
-  const onCompleteSentence = useCallback(
-    () => editor.chain().focus().aiComplete().run(),
-    [editor],
-  );
-  const onFixSpelling = useCallback(
-    () => editor.chain().focus().aiFixSpellingAndGrammar().run(),
-    [editor],
-  );
-  const onMakeLonger = useCallback(
-    () => editor.chain().focus().aiExtend().run(),
-    [editor],
-  );
-  const onMakeShorter = useCallback(
-    () => editor.chain().focus().aiShorten().run(),
-    [editor],
-  );
-  const onTldr = useCallback(
-    () => editor.chain().focus().aiTldr().run(),
-    [editor],
-  );
-  const onTone = useCallback(
-    (tone: string) => editor.chain().focus().aiAdjustTone(tone).run(),
-    [editor],
-  );
-  const onTranslate = useCallback(
-    (language: Language) => editor.chain().focus().aiTranslate(language).run(),
-    [editor],
-  );
+  // const onSimplify = useCallback(
+  //   () => editor.chain().focus().aiSimplify().run(),
+  //   [editor],
+  // );
+  const onSimplify = () => {};
+  // const onEmojify = useCallback(
+  //   () => editor.chain().focus().aiEmojify().run(),
+  //   [editor],
+  // );
+  const onEmojify = () => {};
+  // const onCompleteSentence = useCallback(
+  //   () => editor.chain().focus().aiComplete().run(),
+  //   [editor],
+  // );
+  const onCompleteSentence = () => {};
+  // const onFixSpelling = useCallback(
+  //   () => editor.chain().focus().aiFixSpellingAndGrammar().run(),
+  //   [editor],
+  // );
+  const onFixSpelling = () => {};
+  // const onMakeLonger = useCallback(
+  //   () => editor.chain().focus().aiExtend().run(),
+  //   [editor],
+  // );
+  const onMakeLonger = () => {};
+  // const onMakeShorter = useCallback(
+  //   () => editor.chain().focus().aiShorten().run(),
+  //   [editor],
+  // );
+  const onMakeShorter = () => {};
+  // const onTldr = useCallback(
+  //   () => editor.chain().focus().aiTldr().run(),
+  //   [editor],
+  // );
+  const onTldr = () => {};
+  // const onTone = useCallback(
+  //   (tone: string) => editor.chain().focus().aiAdjustTone(tone).run(),
+  //   [editor],
+  // );
+  const onTone = () => {};
+  // const onTranslate = useCallback(
+  //   (language: Language) => editor.chain().focus().aiTranslate(language).run(),
+  //   [editor],
+  // );
+  const onTranslate = () => {};
   const onLink = useCallback(
     (url: string, inNewTab?: boolean) =>
       editor

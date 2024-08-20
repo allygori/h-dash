@@ -424,12 +424,12 @@ export const initialContent = {
                 class: null,
                 textAlign: "left",
               },
-              content: [
-                {
-                  type: "text",
-                  text: "@/components/text-editor/vendors/@tiptap-pro/extension-ai",
-                },
-              ],
+              // content: [
+              //   {
+              //     type: "text",
+              //     text: "@/components/text-editor/vendors/@tiptap-pro/extension-ai",
+              //   },
+              // ],
             },
           ],
         },

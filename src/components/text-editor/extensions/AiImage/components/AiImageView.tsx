@@ -6,7 +6,7 @@ import {
 import { useCallback, useMemo, useState } from "react";
 import toast from "react-hot-toast";
 import { v4 as uuid } from "uuid";
-import { ImageOptions } from "@/components/text-editor/vendors/@tiptap-pro/extension-ai";
+// import { ImageOptions } from "@/components/text-editor/vendors/@tiptap-pro/extension-ai";
 
 import * as Dropdown from "@radix-ui/react-dropdown-menu";
 
@@ -31,7 +31,8 @@ const imageStyles = [
 
 interface Data {
   text: string;
-  imageStyle?: ImageOptions;
+  // imageStyle?: ImageOptions;
+  imageStyle?: any;
 }
 
 export const AiImageView = ({
@@ -141,7 +142,7 @@ export const AiImageView = ({
       return () =>
         setData((prevData) => ({
           ...prevData,
-          imageStyle: style.value as ImageOptions,
+          // imageStyle: style.value as ImageOptions,
         }));
     },
     [],

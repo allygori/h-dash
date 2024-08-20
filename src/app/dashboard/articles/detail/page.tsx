@@ -19,9 +19,18 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-import { TiptapCollabProvider } from "@hocuspocus/provider";
-import { BlockEditor } from "@/components/text-editor/components/block-editor";
 import { useState } from "react";
+import dynamic from "next/dynamic";
+import { TiptapCollabProvider } from "@hocuspocus/provider";
+// import { BlockEditor } from "@/components/text-editor/components/block-editor";
+
+const BlockEditor = dynamic(
+  () =>
+    import(
+      "../../../../components/text-editor/components/block-editor/BlockEditor"
+    ),
+  { ssr: false },
+);
 
 type Props = {};
 

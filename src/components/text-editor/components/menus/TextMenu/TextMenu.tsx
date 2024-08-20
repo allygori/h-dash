@@ -103,7 +103,7 @@ export const TextMenu = ({ editor }: TextMenuProps) => {
           <Icon name="Code" />
         </MemoButton>
         <MemoButton tooltip="Code block" onClick={commands.onCodeBlock}>
-          <Icon name="Code2" />
+          <Icon name="Braces" />
         </MemoButton>
         <EditLinkPopover onSetLink={commands.onLink} />
         <Popover.Root>
@@ -144,7 +144,7 @@ export const TextMenu = ({ editor }: TextMenuProps) => {
         <Popover.Root>
           <Popover.Trigger asChild>
             <MemoButton tooltip="More options">
-              <Icon name="MoreVertical" />
+              <Icon name="EllipsisVertical" />
             </MemoButton>
           </Popover.Trigger>
           <Popover.Content side="top" asChild>

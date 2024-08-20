@@ -109,6 +109,7 @@ const EmojiList = forwardRef(
             data-emoji-name={item.name}
           >
             {item.fallbackImage ? (
+              // eslint-disable-next-line @next/next/no-img-element
               <img src={item.fallbackImage} className="h-5 w-5" alt="emoji" />
             ) : (
               item.emoji

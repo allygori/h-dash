@@ -16,7 +16,7 @@ import { Icon } from "@/components/text-editor/ui/Icon";
 import {
   AiTone,
   AiToneOption,
-} from "@/components/text-editor/components/BlockEditor/types";
+} from "@/components/text-editor/components/block-editor/types";
 import { tones } from "@/components/text-editor/lib/constants";
 
 import * as Dropdown from "@radix-ui/react-dropdown-menu";

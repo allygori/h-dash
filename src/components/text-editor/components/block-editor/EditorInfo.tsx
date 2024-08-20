@@ -42,6 +42,7 @@ export const EditorInfo = memo(
               {users.map((user: EditorUser) => (
                 <div key={user.clientId} className="-ml-3">
                   <Tooltip title={user.name}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       className="h-8 w-8 rounded-full border border-white dark:border-black"
                       src={`https://api.dicebear.com/7.x/notionists-neutral/svg?seed=${
