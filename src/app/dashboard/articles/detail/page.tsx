@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -17,12 +19,19 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
+import { TiptapCollabProvider } from "@hocuspocus/provider";
+import { BlockEditor } from "@/components/text-editor/components/block-editor";
+import { useState } from "react";
+
 type Props = {};
 
 const Page = ({}: Props) => {
+  const [provider, setProvider] = useState<TiptapCollabProvider | null>(null);
+
   return (
     <main>
-      <Card className="w-[350px]">
+      {/* <Card className="w-[350px]"> */}
+      <Card className="w-full">
         <CardHeader>
           <CardTitle>Create project</CardTitle>
           <CardDescription>
@@ -49,6 +58,10 @@ const Page = ({}: Props) => {
                     <SelectItem value="nuxt">Nuxt.js</SelectItem>
                   </SelectContent>
                 </Select>
+              </div>
+
+              <div>
+                <BlockEditor provider={provider} />
               </div>
             </div>
           </form>

@@ -55,6 +55,11 @@ export const MENUS: Menu[] = [
             text: "Detail",
             href: "/dashboard/articles/detail",
           },
+          {
+            icon: <Dot />,
+            text: "Editor",
+            href: "/dashboard/articles/editor",
+          },
         ],
       },
       // {

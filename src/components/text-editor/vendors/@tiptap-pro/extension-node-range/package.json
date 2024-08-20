@@ -1,0 +1,39 @@
+{
+  "name": "@/components/text-editor/vendors/@tiptap-pro/extension-node-range",
+  "description": "node range extension for tiptap",
+  "version": "2.10.3",
+  "homepage": "https://tiptap.dev",
+  "keywords": [
+    "tiptap",
+    "tiptap extension"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/ueberdosis"
+  },
+  "main": "dist/tiptap-extension-node-range.cjs.js",
+  "umd": "dist/tiptap-extension-node-range.umd.js",
+  "module": "dist/tiptap-extension-node-range.esm.js",
+  "types": "dist/tiptap-pro/packages/extension-node-range/src/index.d.ts",
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "LICENSE.md"
+  ],
+  "peerDependencies": {
+    "@tiptap/core": "^2.0.0",
+    "@tiptap/pm": "^2.0.0"
+  },
+  "devDependencies": {
+    "@tiptap/core": "^2.0.0",
+    "@tiptap/pm": "^2.0.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.tiptap.dev"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && rollup -c"
+  }
+}
